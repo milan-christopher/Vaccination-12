@@ -116,7 +116,7 @@ def main():
         return
 
     now = now_local()
-   beat = HEARTBEAT_HOUR >= 0 and now.hour == HEARTBEAT_HOUR
+    beat = HEARTBEAT_HOUR >= 0 and now.hour == HEARTBEAT_HOUR
     if manual or beat:
         prio = "default" if manual else "low"
         if error:
